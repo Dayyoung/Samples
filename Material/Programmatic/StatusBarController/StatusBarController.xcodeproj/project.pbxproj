@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AD9EFE345803F68EDADB1BF /* Pods_StatusBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2BC93008786A87DB3A4D6C /* Pods_StatusBarController.framework */; };
 		96784EE41D9012B00061C06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96784EE31D9012B00061C06C /* AppDelegate.swift */; };
 		96784EE61D9012B00061C06C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96784EE51D9012B00061C06C /* RootViewController.swift */; };
 		96784EEB1D9012B00061C06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96784EEA1D9012B00061C06C /* Assets.xcassets */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0611DE93CE33995642F3296D /* Pods-StatusBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBarController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBarController/Pods-StatusBarController.debug.xcconfig"; sourceTree = "<group>"; };
+		0A2BC93008786A87DB3A4D6C /* Pods_StatusBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StatusBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96784EE01D9012B00061C06C /* StatusBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96784EE31D9012B00061C06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96784EE51D9012B00061C06C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		96784EED1D9012B10061C06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96784EEF1D9012B10061C06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96784F191D901DEF0061C06C /* AppStatusBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStatusBarController.swift; sourceTree = "<group>"; };
+		A1BD113FDAE4B07BB9CACE30 /* Pods-StatusBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBarController.release.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBarController/Pods-StatusBarController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +46,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD9EFE345803F68EDADB1BF /* Pods_StatusBarController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141A4E0C15342F26DA06DC00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A2BC93008786A87DB3A4D6C /* Pods_StatusBarController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4016A09BDD2EC9131EEDEBD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0611DE93CE33995642F3296D /* Pods-StatusBarController.debug.xcconfig */,
+				A1BD113FDAE4B07BB9CACE30 /* Pods-StatusBarController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		96784ED71D9012B00061C06C = {
 			isa = PBXGroup;
 			children = (
 				96784EE21D9012B00061C06C /* StatusBarController */,
 				96784EE11D9012B00061C06C /* Products */,
+				4016A09BDD2EC9131EEDEBD1 /* Pods */,
+				141A4E0C15342F26DA06DC00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,10 +108,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96784EF21D9012B10061C06C /* Build configuration list for PBXNativeTarget "StatusBarController" */;
 			buildPhases = (
+				448B4643E57BB085AD6B7AE1 /* [CP] Check Pods Manifest.lock */,
 				96784EDC1D9012B00061C06C /* Sources */,
 				96784EDD1D9012B00061C06C /* Frameworks */,
 				96784EDE1D9012B00061C06C /* Resources */,
 				96784F1E1D901E170061C06C /* Embed Frameworks */,
+				A9980E59F3AD257D28EE22AF /* [CP] Embed Pods Frameworks */,
+				82D5AF80A38416C45253E53B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		448B4643E57BB085AD6B7AE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82D5AF80A38416C45253E53B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StatusBarController/Pods-StatusBarController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9980E59F3AD257D28EE22AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StatusBarController/Pods-StatusBarController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96784EDC1D9012B00061C06C /* Sources */ = {
@@ -266,6 +341,7 @@
 		};
 		96784EF31D9012B10061C06C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0611DE93CE33995642F3296D /* Pods-StatusBarController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -279,6 +355,7 @@
 		};
 		96784EF41D9012B10061C06C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1BD113FDAE4B07BB9CACE30 /* Pods-StatusBarController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159DDA0089B6888F6BCCFEF1 /* Pods_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136FEBE46EEEA4200ABE5129 /* Pods_Watch.framework */; };
 		965591BC1DE3B1C8001576E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965591BB1DE3B1C8001576E7 /* AppDelegate.swift */; };
 		965591BE1DE3B1C8001576E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965591BD1DE3B1C8001576E7 /* ViewController.swift */; };
 		965591C31DE3B1C8001576E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965591C21DE3B1C8001576E7 /* Assets.xcassets */; };
@@ -27,6 +28,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E360921FC1B5136A878F39A /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
+		136FEBE46EEEA4200ABE5129 /* Pods_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		172A46EADEA87A9F5BC84102 /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		965591B81DE3B1C8001576E7 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965591BB1DE3B1C8001576E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		965591BD1DE3B1C8001576E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,17 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159DDA0089B6888F6BCCFEF1 /* Pods_Watch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5398EBBB549317854295CA54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				172A46EADEA87A9F5BC84102 /* Pods-Watch.debug.xcconfig */,
+				0E360921FC1B5136A878F39A /* Pods-Watch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		965591AF1DE3B1C8001576E7 = {
 			isa = PBXGroup;
 			children = (
 				965591BA1DE3B1C8001576E7 /* Watch */,
 				965591B91DE3B1C8001576E7 /* Products */,
+				5398EBBB549317854295CA54 /* Pods */,
+				B46859366B8550778E77B8A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +90,14 @@
 			path = Watch;
 			sourceTree = "<group>";
 		};
+		B46859366B8550778E77B8A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				136FEBE46EEEA4200ABE5129 /* Pods_Watch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,10 +105,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 965591CA1DE3B1C8001576E7 /* Build configuration list for PBXNativeTarget "Watch" */;
 			buildPhases = (
+				556B5F4256932A42F84869D0 /* [CP] Check Pods Manifest.lock */,
 				965591B41DE3B1C8001576E7 /* Sources */,
 				965591B51DE3B1C8001576E7 /* Frameworks */,
 				965591B61DE3B1C8001576E7 /* Resources */,
 				965591D31DE3B59D001576E7 /* Embed Frameworks */,
+				F89538237DD750A0B1EB7CEF /* [CP] Embed Pods Frameworks */,
+				C4AADE7E8556745AFEB6D31F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		556B5F4256932A42F84869D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4AADE7E8556745AFEB6D31F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watch/Pods-Watch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89538237DD750A0B1EB7CEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watch/Pods-Watch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		965591B41DE3B1C8001576E7 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		965591CB1DE3B1C8001576E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172A46EADEA87A9F5BC84102 /* Pods-Watch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Watch/Info.plist;
@@ -273,6 +349,7 @@
 		};
 		965591CC1DE3B1C8001576E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E360921FC1B5136A878F39A /* Pods-Watch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Watch/Info.plist;

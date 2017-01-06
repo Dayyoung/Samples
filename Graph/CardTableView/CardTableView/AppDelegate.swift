@@ -43,7 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let graph = Graph()
         let search = Search<Entity>(graph: graph).for(types: "Category")
         
-        var viewControllers = [PostsViewController]()
+        //var viewControllers = [PostsViewController]()
+        
+        var viewControllers = [UIViewController]()
         
         for category in search.sync() {
             if let name = category["name"] as? String {
@@ -51,7 +53,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        let pageTabBarController = AppPageTabBarController(viewControllers: viewControllers)
+        //let pageTabBarController = AppPageTabBarController(viewControllers: viewControllers)
+        let pageTabBarController = AppPageTabBarController(viewControllers: viewControllers , selectedIndex : 0)
         let toolbarController = AppToolbarController(rootViewController: pageTabBarController)
         let menuController = AppMenuController(rootViewController: toolbarController)
         

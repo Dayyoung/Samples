@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C090BBDDD3C92DDEC89B6BF /* Pods_NavigationDrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B15EA976BC629DE81FACB0C /* Pods_NavigationDrawerController.framework */; };
 		9AC455B01D9DC7BD00A7ABF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC455AF1D9DC7BD00A7ABF0 /* AppDelegate.swift */; };
 		9AC455B51D9DC7BE00A7ABF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC455B31D9DC7BE00A7ABF0 /* Main.storyboard */; };
 		9AC455B71D9DC7BE00A7ABF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC455B61D9DC7BE00A7ABF0 /* Assets.xcassets */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		563257BBBE45F98E82DF6EDB /* Pods-NavigationDrawerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationDrawerController.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationDrawerController/Pods-NavigationDrawerController.release.xcconfig"; sourceTree = "<group>"; };
+		8B15EA976BC629DE81FACB0C /* Pods_NavigationDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC455AC1D9DC7BD00A7ABF0 /* NavigationDrawerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationDrawerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC455AF1D9DC7BD00A7ABF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AC455B41D9DC7BE00A7ABF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		9AC455C61D9DC8E500A7ABF0 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9AC455C71D9DC8E500A7ABF0 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		9AC455CB1D9DC8ED00A7ABF0 /* AppNavigationDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationDrawerController.swift; sourceTree = "<group>"; };
+		DA35E5D30EE033D4EF571213 /* Pods-NavigationDrawerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationDrawerController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationDrawerController/Pods-NavigationDrawerController.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C090BBDDD3C92DDEC89B6BF /* Pods_NavigationDrawerController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9D2C0C213EEA246DC6A974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B15EA976BC629DE81FACB0C /* Pods_NavigationDrawerController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A15C93881FE926D42A0889C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA35E5D30EE033D4EF571213 /* Pods-NavigationDrawerController.debug.xcconfig */,
+				563257BBBE45F98E82DF6EDB /* Pods-NavigationDrawerController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9AC455A31D9DC7BD00A7ABF0 = {
 			isa = PBXGroup;
 			children = (
 				9AC455AE1D9DC7BD00A7ABF0 /* NavigationDrawerController */,
 				9AC455AD1D9DC7BD00A7ABF0 /* Products */,
+				2A15C93881FE926D42A0889C /* Pods */,
+				0A9D2C0C213EEA246DC6A974 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,10 +117,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AC455BE1D9DC7BE00A7ABF0 /* Build configuration list for PBXNativeTarget "NavigationDrawerController" */;
 			buildPhases = (
+				6CF335C0C286215FA0AD23B4 /* [CP] Check Pods Manifest.lock */,
 				9AC455A81D9DC7BD00A7ABF0 /* Sources */,
 				9AC455A91D9DC7BD00A7ABF0 /* Frameworks */,
 				9AC455AA1D9DC7BD00A7ABF0 /* Resources */,
 				9AC455C41D9DC81600A7ABF0 /* Embed Frameworks */,
+				7CE027784FF8CA72CB7E7840 /* [CP] Embed Pods Frameworks */,
+				D3D7BD0BD96DD08569BD5126 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +180,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CF335C0C286215FA0AD23B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE027784FF8CA72CB7E7840 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NavigationDrawerController/Pods-NavigationDrawerController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3D7BD0BD96DD08569BD5126 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NavigationDrawerController/Pods-NavigationDrawerController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AC455A81D9DC7BD00A7ABF0 /* Sources */ = {
@@ -284,6 +359,7 @@
 		};
 		9AC455BF1D9DC7BE00A7ABF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA35E5D30EE033D4EF571213 /* Pods-NavigationDrawerController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavigationDrawerController/Info.plist;
@@ -296,6 +372,7 @@
 		};
 		9AC455C01D9DC7BE00A7ABF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 563257BBBE45F98E82DF6EDB /* Pods-NavigationDrawerController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavigationDrawerController/Info.plist;

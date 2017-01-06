@@ -25,6 +25,7 @@
 		96B5DF931DBADCA600A15DCE /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B5DF781DBADCA600A15DCE /* SampleData.swift */; };
 		96B5E0161DBBF13400A15DCE /* AppMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B5E0151DBBF13400A15DCE /* AppMenuController.swift */; };
 		96B5E01E1DBBF6EE00A15DCE /* AppPageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B5E01D1DBBF6EE00A15DCE /* AppPageTabBarController.swift */; };
+		AEE2839F3C797903EB453668 /* Pods_CardTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8541FCA9C2102A64CE68853 /* Pods_CardTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		020F9BD543F0B84284CE99DD /* Pods-CardTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardTableView/Pods-CardTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		96A375E01DBD02C900FBB799 /* photo6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo6.jpg; sourceTree = "<group>"; };
 		96A375E21DBD04B600FBB799 /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		96A375E41DBD064F00FBB799 /* photo7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo7.jpg; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		96B5DF781DBADCA600A15DCE /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		96B5E0151DBBF13400A15DCE /* AppMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMenuController.swift; sourceTree = "<group>"; };
 		96B5E01D1DBBF6EE00A15DCE /* AppPageTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPageTabBarController.swift; sourceTree = "<group>"; };
+		D8541FCA9C2102A64CE68853 /* Pods_CardTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F222132B401548898C428737 /* Pods-CardTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardTableView/Pods-CardTableView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,17 +72,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE2839F3C797903EB453668 /* Pods_CardTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CE4D7F962B5F8C5587D6CC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				020F9BD543F0B84284CE99DD /* Pods-CardTableView.debug.xcconfig */,
+				F222132B401548898C428737 /* Pods-CardTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4CC5F66BCDCEB823C35B0CDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8541FCA9C2102A64CE68853 /* Pods_CardTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96B5DE9B1DB8572600A15DCE = {
 			isa = PBXGroup;
 			children = (
 				96B5DF5C1DBADCA600A15DCE /* CardTableView */,
 				96B5DEA51DB8572600A15DCE /* Products */,
+				3CE4D7F962B5F8C5587D6CC2 /* Pods */,
+				4CC5F66BCDCEB823C35B0CDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,10 +155,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96B5DEB61DB8572600A15DCE /* Build configuration list for PBXNativeTarget "CardTableView" */;
 			buildPhases = (
+				9406F3D7478A52FEE36423C6 /* [CP] Check Pods Manifest.lock */,
 				96B5DEA01DB8572600A15DCE /* Sources */,
 				96B5DEA11DB8572600A15DCE /* Frameworks */,
 				96B5DEA21DB8572600A15DCE /* Resources */,
 				96B5DEBF1DB8592200A15DCE /* Embed Frameworks */,
+				BEB2F0BA0807E64BE7CEA583 /* [CP] Embed Pods Frameworks */,
+				4C102657D0CCC95AF5CE7749 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +225,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C102657D0CCC95AF5CE7749 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardTableView/Pods-CardTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9406F3D7478A52FEE36423C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB2F0BA0807E64BE7CEA583 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardTableView/Pods-CardTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96B5DEA01DB8572600A15DCE /* Sources */ = {
@@ -326,6 +401,7 @@
 		};
 		96B5DEB71DB8572600A15DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 020F9BD543F0B84284CE99DD /* Pods-CardTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -339,6 +415,7 @@
 		};
 		96B5DEB81DB8572600A15DCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F222132B401548898C428737 /* Pods-CardTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

@@ -14,6 +14,7 @@
 		96784FAD1D90257E0061C06C /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96784FAC1D90257E0061C06C /* RedViewController.swift */; };
 		96784FAF1D90258E0061C06C /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96784FAE1D90258E0061C06C /* GreenViewController.swift */; };
 		96784FB11D9025A60061C06C /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96784FB01D9025A60061C06C /* BlueViewController.swift */; };
+		99B704C0BC3C26D66CFDCDCD /* Pods_PageTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F44EB6D716B93E149AB7F9 /* Pods_PageTabBarController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		430F8062FDC2B45E3E88569D /* Pods-PageTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageTabBarController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PageTabBarController/Pods-PageTabBarController.debug.xcconfig"; sourceTree = "<group>"; };
+		45F44EB6D716B93E149AB7F9 /* Pods_PageTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96784EFE1D9013E50061C06C /* PageTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96784F011D9013E50061C06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96784F081D9013E50061C06C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		96784FAC1D90257E0061C06C /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		96784FAE1D90258E0061C06C /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		96784FB01D9025A60061C06C /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		BCEEACD91A73E98756A9CD15 /* Pods-PageTabBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageTabBarController.release.xcconfig"; path = "Pods/Target Support Files/Pods-PageTabBarController/Pods-PageTabBarController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +50,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B704C0BC3C26D66CFDCDCD /* Pods_PageTabBarController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34B0EAB7A90DD9B2AFDD006C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45F44EB6D716B93E149AB7F9 /* Pods_PageTabBarController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48992D0862487192B20D5F52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				430F8062FDC2B45E3E88569D /* Pods-PageTabBarController.debug.xcconfig */,
+				BCEEACD91A73E98756A9CD15 /* Pods-PageTabBarController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		96784EF51D9013E50061C06C = {
 			isa = PBXGroup;
 			children = (
 				96784F001D9013E50061C06C /* PageTabBarController */,
 				96784EFF1D9013E50061C06C /* Products */,
+				48992D0862487192B20D5F52 /* Pods */,
+				34B0EAB7A90DD9B2AFDD006C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,10 +114,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96784F101D9013E50061C06C /* Build configuration list for PBXNativeTarget "PageTabBarController" */;
 			buildPhases = (
+				9C7F0E2240C1C43FAAAD702C /* [CP] Check Pods Manifest.lock */,
 				96784EFA1D9013E50061C06C /* Sources */,
 				96784EFB1D9013E50061C06C /* Frameworks */,
 				96784EFC1D9013E50061C06C /* Resources */,
 				96784F2A1D901F000061C06C /* Embed Frameworks */,
+				D63165804F4EF1BBC0F248A4 /* [CP] Embed Pods Frameworks */,
+				39C0C3AC7A6246D89F58B62C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39C0C3AC7A6246D89F58B62C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PageTabBarController/Pods-PageTabBarController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C7F0E2240C1C43FAAAD702C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D63165804F4EF1BBC0F248A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PageTabBarController/Pods-PageTabBarController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96784EFA1D9013E50061C06C /* Sources */ = {
@@ -274,6 +349,7 @@
 		};
 		96784F111D9013E50061C06C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430F8062FDC2B45E3E88569D /* Pods-PageTabBarController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -287,6 +363,7 @@
 		};
 		96784F121D9013E50061C06C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEEACD91A73E98756A9CD15 /* Pods-PageTabBarController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
