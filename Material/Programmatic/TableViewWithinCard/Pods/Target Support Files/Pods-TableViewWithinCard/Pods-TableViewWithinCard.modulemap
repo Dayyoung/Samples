@@ -1,0 +1,6 @@
+framework module Pods_TableViewWithinCard {
+  umbrella header "Pods-TableViewWithinCard-umbrella.h"
+
+  export *
+  module * { export * }
+}

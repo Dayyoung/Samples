@@ -1,0 +1,17 @@
+PODS:
+  - Graph (2.1.0)
+  - Material (2.3.22):
+    - Material/Core (= 2.3.22)
+  - Material/Core (2.3.22)
+
+DEPENDENCIES:
+  - Graph (~> 2.0)
+  - Material (~> 2.0)
+
+SPEC CHECKSUMS:
+  Graph: 2d1b00516566c8a1d3d304b852288c7e68a13c01
+  Material: d07ff378670c24e27dd49ea4c5004ac79da2d68c
+
+PODFILE CHECKSUM: 011eeb0a2c38f03a672a93718478fe973b3e07bd
+
+COCOAPODS: 1.1.1

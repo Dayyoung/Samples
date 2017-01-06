@@ -1,0 +1,14 @@
+PODS:
+  - Material (2.3.22):
+    - Material/Core (= 2.3.22)
+  - Material/Core (2.3.22)
+
+DEPENDENCIES:
+  - Material (~> 2.0)
+
+SPEC CHECKSUMS:
+  Material: d07ff378670c24e27dd49ea4c5004ac79da2d68c
+
+PODFILE CHECKSUM: dccbca7dcf668496b8e7714302b20ced6696b827
+
+COCOAPODS: 1.1.1
